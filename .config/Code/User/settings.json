@@ -1,0 +1,157 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.formatOnType": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.experimentalFeatures": "Enabled",
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "files.associations": {
+        "*.py": "python"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.autopep8Args": [
+        "--select=E,W"
+    ],
+    "python.analysis.openFilesOnly": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "python.languageServer": "Pylance",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "[latex]": {
+        "editor.renderWhitespace": "boundary",
+        "editor.wordWrap": "on",
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+    },
+    "terminal.integrated.scrollback": 5000,
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "sonarlint.rules": {
+        "java:S117": {
+            "level": "off"
+        },
+        "java:S106": {
+            "level": "off"
+        }
+    },
+    "colorInfo.languages": [
+        {
+            "selector": "css",
+            "colors": "css"
+        },
+        {
+            "selector": "sass",
+            "colors": "css"
+        },
+        {
+            "selector": "scss",
+            "colors": "css"
+        },
+        {
+            "selector": "less",
+            "colors": "css"
+        },
+        {
+            "selector": "js",
+            "colors": "css"
+        }
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "java.project.importHint": false,
+    "python.condaPath": "/opt/anaconda/bin/conda",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.enabledLanguageIds": [
+        "latex",
+        "tex"
+    ],
+    "rust.clippy_preference": "on",
+    "explorer.confirmDragAndDrop": false,
+    "rust-client.engine": "rust-analyzer",
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "explorer.confirmDelete": false,
+    "editor.bracketPairColorization.enabled": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "python.formatting.provider": "yapf",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true,
+        "latex": false,
+        "lua": true,
+        "xml": true,
+        "python": true,
+        "cpp": true,
+        "cmake": true,
+        "ignore": true,
+        "java": true,
+        "rust": true,
+        "gradle": true,
+        "makefile": true,
+        "ros.msg": true
+    },
+    "github.copilot.advanced": {
+        "debug.showScores": true,
+    },
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "notebook.lineNumbers": "on",
+    "cmake.configureOnOpen": true,
+    "python.defaultInterpreterPath": "",
+    // "arduino.path": "/home/kurt/builds/arduino-1.8.13",  // Update with your Arduino path if needed
+    "luahelper.format.chop_down_kv_table": false,
+    "luahelper.format.indent_width": 2,
+    "luahelper.format.tab_width": 2,
+    "customizeUI.font.regular": "Roboto",
+    "customizeUI.font.monospace": "Fira Code",
+    "window.titleBarStyle": "custom",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.renderWhitespace": "trailing",
+    "cmake.revealLog": "never",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "editor.cursorSmoothCaretAnimation": true,
+    "Lua.telemetry.enable": true,
+    "editor.formatOnSaveMode": "modifications",
+    "workbench.colorTheme": "Default High Contrast",
+    "window.zoomLevel": 2,
+    "editor.experimental.useCustomCodeActionMenu": true,
+    "jupyter.notebookFileRoot": "",
+    "editor.stickyScroll.enabled": true,
+    "window.commandCenter": true,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "editor.minimap.renderCharacters": false,
+}

@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "tab",
+        "command": "-mfcobol.indent",
+        "when": "config.microFocusCOBOL.editor.improvedTabStops && editorTextFocus && !editorReadonly && !editorTabMovesFocus && !inSnippetMode && editorLangId == 'cobol'"
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.showCommands",
+    }
+]

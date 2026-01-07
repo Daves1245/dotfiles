@@ -1,0 +1,6 @@
+[fs]
+hide=/snap.*,/boot/efi
+
+[diskio]
+hide_zero=True
+nvme0n1p2_alias=/

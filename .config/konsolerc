@@ -1,0 +1,76 @@
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+1024x768 screen: Height=768
+1024x768 screen: Width=1024
+1280x800 screen: Height=665
+1280x800 screen: Width=1280
+1280x800 screen: XPosition=0
+1280x800 screen: YPosition=69
+1440x810 screen: Height=810
+1440x810 screen: Width=1440
+1440x900 screen: Height=564
+1440x900 screen: Width=1080
+1440x900 screen: XPosition=360
+1440x900 screen: YPosition=270
+1648x1030 screen: Height=895
+1648x1030 screen: Width=1648
+1648x1030 screen: XPosition=0
+1648x1030 screen: YPosition=69
+1920x1080 screen: Height=1011
+1920x1080 screen: Width=960
+1920x1080 screen: Window-Maximized=true
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=69
+1920x1200 screen: Height=1200
+1920x1200 screen: Width=1920
+1920x1200 screen: Window-Maximized=true
+1920x1200 screen: XPosition=892
+1920x1200 screen: YPosition=0
+2 screens: Height=900
+2 screens: Width=1440
+2 screens: XPosition=0
+2 screens: YPosition=69
+2560x1440 screen: Height=1440
+2560x1440 screen: Width=2560
+2560x1600 screen: Height=1600
+2560x1600 screen: Width=2560
+2880x1800 screen: Height=1165
+2880x1800 screen: Width=2160
+2880x1800 screen: Window-Maximized=true
+2880x1800 screen: XPosition=0
+2880x1800 screen: YPosition=69
+3 screens: Height=699
+3 screens: Width=1440
+3 screens: XPosition=3228
+3 screens: YPosition=228
+3296x2060 screen: Height=2060
+3296x2060 screen: Width=3296
+3296x2060 screen: Window-Maximized=true
+960x540 screen: Height=540
+960x540 screen: Width=960
+960x600 screen: Height=600
+960x600 screen: Width=960
+DP-0=DP-0
+DP-0 eDP-1-1=DP-0
+DP-0.2 DP-0.3=DP-0.3
+DP-1 eDP-1=eDP-1
+DP-1-0 eDP-1=eDP-1
+DP-1-0.2 DP-1-0.3 eDP-1=DP-1-0.3
+DP-1-1-2=DP-1-1-2
+DP-1-1-2 DP-1-1-3=DP-1-1-2
+DP-1-1-2 DP-1-1-3 eDP-1-1=DP-1-1-3
+DP-1-2 DP-1-3=DP-1-2
+DP-1-2 DP-1-3 eDP-1=DP-1-3
+HDMI-1 eDP-1=eDP-1
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAAAA/////wAAAO8A////+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAAD/////AAABPwD///8AAAP3AAACHwAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+eDP-1-1=eDP-1-1
+
+[UiSettings]
+ColorScheme=
