@@ -81,6 +81,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Load custom aliases
+[[ -f ~/.zsh_alias ]] && source ~/.zsh_alias
+
+# Enable colors for ls and other commands
+if [[ -x /usr/bin/dircolors ]]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
