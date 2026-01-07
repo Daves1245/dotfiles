@@ -83,15 +83,16 @@ git checkout release
 cd -
 
 # Setup Zsh and Oh My Zsh
-# Initialize git submodules for oh-my-zsh and custom plugins/themes
+# submodules for custom plugins/themes
 git submodule update --init --recursive
 
-# Copy oh-my-zsh to home directory
+# oh-my-zsh
 if [ -d ~/.oh-my-zsh ]; then
-  echo "oh-my-zsh already exists at ~/.oh-my-zsh, removing..."
+  echo "Removing existing oh-my-zsh installation..."
   rm -rf ~/.oh-my-zsh
 fi
-cp -r .oh-my-zsh ~/.oh-my-zsh
+echo "Installing oh-my-zsh..."
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 # Clone powerlevel10k to home directory (as expected by .zshrc)
 if [ -d ~/powerlevel10k ]; then
@@ -112,7 +113,7 @@ if [ -d ~/.zsh_custom ]; then
 fi
 cp -r .zsh_custom ~/.zsh_custom
 
-# Setup Konsole terminal configuration
+# Konsole
 if [ -f .config/konsolerc ]; then
   echo "Setting up Konsole configuration..."
   cp .config/konsolerc ~/.config/
