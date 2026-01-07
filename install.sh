@@ -49,7 +49,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 else
   # Install any Apt Pre-requisites
   sudo apt-get update -y
-  pkgs='curl ccls clang-format vim-gtk3 ripgrep fd-find tmux zsh'
+  pkgs='curl ccls clang-format vim-gtk3 ripgrep fd-find tmux zsh x11-xkb-utils'
   if ! dpkg -s $pkgs >/dev/null 2>&1; then
     sudo apt-get install $pkgs -y
   fi
@@ -86,7 +86,18 @@ cd -
 # Initialize git submodules for oh-my-zsh and custom plugins/themes
 git submodule update --init --recursive
 
+# Copy oh-my-zsh to home directory
+if [ -d ~/.oh-my-zsh ]; then
+  echo "oh-my-zsh already exists at ~/.oh-my-zsh, removing..."
+  rm -rf ~/.oh-my-zsh
+fi
+cp -r .oh-my-zsh ~/.oh-my-zsh
+
 # Clone powerlevel10k to home directory (as expected by .zshrc)
+if [ -d ~/powerlevel10k ]; then
+  echo "powerlevel10k already exists at ~/powerlevel10k, removing..."
+  rm -rf ~/powerlevel10k
+fi
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 # Copy zsh config files
@@ -95,6 +106,10 @@ cp .p10k.zsh ~/.p10k.zsh
 cp .zsh_alias ~/.zsh_alias
 
 # Copy custom zsh directory (plugins and themes)
+if [ -d ~/.zsh_custom ]; then
+  echo "Custom zsh directory already exists at ~/.zsh_custom, removing..."
+  rm -rf ~/.zsh_custom
+fi
 cp -r .zsh_custom ~/.zsh_custom
 
 # Setup Konsole terminal configuration
