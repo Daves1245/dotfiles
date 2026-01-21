@@ -635,5 +635,12 @@ function! GetLinkerIndent()
   return indent(v:lnum - 1)
 endfunction
 
+" Wayland paste clipboard
+if executable('wl-paste')
+    " Paste from clipboard with p
+    nnoremap p :r !wl-paste --no-newline<CR>
+    vnoremap p "_d:r !wl-paste --no-newline<CR>
+endif
+
 " noremap <C-_>C-_<Plug>Commentary
 " nnoremap <C-_>C-_<Plug>CommentaryLine
