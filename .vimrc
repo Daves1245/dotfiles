@@ -84,6 +84,13 @@ set incsearch
 set hlsearch
 set cursorline
 set clipboard=unnamed,unnamedplus
+" Wayland clipboard support
+if executable('wl-copy') && executable('wl-paste')
+    augroup WaylandClipboard
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' && v:event.regname ==# '' | call system('wl-copy', @") | endif
+    augroup END
+endif
 set timeout ttimeoutlen=25
 
 " Remove trailing whitespace
