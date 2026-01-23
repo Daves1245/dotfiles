@@ -84,14 +84,15 @@ set incsearch
 set hlsearch
 set cursorline
 set clipboard=unnamed,unnamedplus
-" Wayland clipboard support
+
+" Wayland clipboard support - bidirectional sync
 if executable('wl-copy') && executable('wl-paste')
     augroup WaylandClipboard
         autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' && v:event.regname ==# '' | call system('wl-copy', @") | endif
+        " Copy TO system clipboard after any yank/delete
+        autocmd TextYankPost * call system('wl-copy', getreg('"'))
     augroup END
 endif
-set timeout ttimeoutlen=25
 
 " Remove trailing whitespace
 nnoremap <leader>xtrail :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
@@ -147,16 +148,6 @@ endfunction
 " `:call SynStack()` to see syntax highlight group stacktrace
 " :CocCommand semanticTokens.checkCurrent
 " :so $VIMRUNTIME/syntax/hitest.vim
-
-" Map escape-A to alt-A, to fix issue where alt is sent using escape. If
-" there is a 25 ms gap, vim presumes you meant to first press escape, and then
-" A.
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
 
 let g:c_no_curly_error=1
 
